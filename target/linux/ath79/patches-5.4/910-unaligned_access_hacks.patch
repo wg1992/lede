@@ -267,7 +267,7 @@
  		case IPV6_2292HOPOPTS:
 --- a/net/ipv6/exthdrs.c
 +++ b/net/ipv6/exthdrs.c
-@@ -752,7 +752,7 @@ static bool ipv6_hop_jumbo(struct sk_buf
+@@ -751,7 +751,7 @@ static bool ipv6_hop_jumbo(struct sk_buf
  		goto drop;
  	}
  
@@ -706,7 +706,7 @@
  EXPORT_SYMBOL(xfrm_parse_spi);
 --- a/net/ipv4/tcp_input.c
 +++ b/net/ipv4/tcp_input.c
-@@ -3975,14 +3975,16 @@ static bool tcp_parse_aligned_timestamp(
+@@ -3976,14 +3976,16 @@ static bool tcp_parse_aligned_timestamp(
  {
  	const __be32 *ptr = (const __be32 *)(th + 1);
  
